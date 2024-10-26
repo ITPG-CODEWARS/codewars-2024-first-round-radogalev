@@ -64,3 +64,56 @@ nav ul li a:hover {
     color: rgb(66, 66, 66); 
 
 }
+.main-container{
+    display:flex;
+    margin-top:15rem;
+}
+.main-container img{
+     width: 55rem;
+     margin-left:10rem;
+     border-radius: 5px;
+}
+.description{
+    margin-left:5rem;
+    margin-right: 10rem;
+
+}
+.description h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.description p{
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    line-height: 1.7;
+    text-align: center;
+}
+@keyframes slideInimage{
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideIntext{
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.main-container img
+{
+    opacity: 0;
+    animation: slideInimage 1s ease-out forwards; 
+}
+.main-container .description{
+    animation: slideIntext 1s ease-out forwards;
+}
