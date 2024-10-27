@@ -11,7 +11,7 @@ body {
 /* index page */
 
 /* header container style*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -20,9 +20,11 @@ header{
     right: 0;
     background-color: white;
     z-index: 1000;
-    padding: 1rem 0;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); 
+    align-items: center; 
 }
+
 
 /* title style*/
 
@@ -35,8 +37,10 @@ header{
     padding-left:2.5rem;
     font-family: "Orbitron" , sans-serif;
 }
-.title h1{
-    font-size: 4rem;
+.title h1 {
+    font-size: 3.5rem; 
+    margin: 0; 
+    letter-spacing: 0.5px; 
 }
 nav{
    margin-right: 3rem;
@@ -53,11 +57,11 @@ nav{
 nav ul {
     list-style: none;
     display: flex;
-    color: black ;
-    gap: 3rem;
-    font-size: 2.0rem;
-    padding-top: 1.5rem;
-    justify-content: center;
+    gap: 2.5rem; 
+    font-size: 1.8rem; 
+    margin: 0;
+    padding: 0; 
+    align-items: center; 
 }
 
 nav ul li a {
@@ -102,30 +106,38 @@ nav ul li a:hover {
 
 /* hero section style*/
 
-.main-container{
-    display:flex;
-    margin-top:15rem;
+.main-container {
+    display: flex;
+    margin-top: 12rem; 
+    align-items: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
 }
-.main-container img{
-     width: 55rem;
-     margin-left:10rem;
-     border-radius: 5px;
+.main-container img {
+    width: 50%; 
+    max-width: 55rem;
+    margin-left: 0; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
-.description{
-    margin-left:5rem;
-    margin-right: 10rem;
-
+.description {
+    margin-left: 4rem;
+    margin-right: 0;
+    flex: 1;
 }
-.description h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 4rem;
+.description h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
 }
-.description p{
-    margin-top: 10rem;
-    font-size: 2.5rem;
-    line-height: 1.7;
-    text-align: center;
+.description p {
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #444;
 }
 
 /* hero section animation style*/
@@ -168,28 +180,36 @@ nav ul li a:hover {
     font-weight: bold;
     margin-top: 8rem;
 }
-.image-showcase{
-    display:flex;
-    align-items: center;
-    gap: 5rem;
+.image-showcase .train img{
+    aspect-ratio: 16/9;
+}
+.image-showcase {
+    display: flex;
+    align-items: stretch; 
+    gap: 3rem;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
+    max-width: 1400px;
+    padding: 0 2rem;
 }
-.train{
-    width: 32.5rem;
-    transition: background-color 0.5s, padding 0.5s, width 0.5s;
+.train {
+    width: calc(33.333% - 2rem); 
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
-.train img{
-   width: 32.5rem;
+.train img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
-.train:hover{
-   cursor: pointer;
-   background-color: rgb(0, 132, 255);
-   padding: 25px;
-   width: 36.5rem;
-   border-radius: 15px;
-   color:white;
-   transition: background-color 0.5s, padding 0.5s, width 0.5;
+.train:hover {
+    transform: translateY(-5px);
+    background-color: #0066cc; /* Slightly darker blue */
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 .train p{
    font-size: 2.2rem;
@@ -240,105 +260,187 @@ footer{
 #scroll-top-btn:hover {
     background-color: #0056b3;
 }
-@media (max-width: 600px) {
-    html{
-        font-size: 8px;
+
+/* Base styles remain the same as previous suggestions */
+
+/* Tablet Devices (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 11px;
     }
-    header{
-        display:flex;
-        flex-direction: column;
+    header {
+        padding: 1.2rem;
     }
-    nav ul{
-        flex-direction: column;
+    .title h1 {
+        font-size: 3rem;
     }
-    .main-container{
+    nav ul {
+        gap: 2rem;
+        font-size: 1.6rem;
+    }
+    .main-container {
+        margin-top: 10rem;
+        padding: 0 3rem;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-top: 38rem;
+    }
+    .main-container img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .description {
+        margin: 0;
         text-align: center;
+        padding: 0 2rem;
     }
-    .main-container .description{
-        text-align: center;
+    .description h1 {
+        font-size: 3rem;
     }
-    .main-container img{
-        width: 45rem;
-        padding-right: 15rem;
-        border-radius: 5px;
-   }
-    .image-showcase{
-        flex-direction: column;
-        padding-left: 1rem;
+    .description p {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
     }
-  }   
-@media (min-width: 600px) and (max-width: 992px) {
+    .image-showcase {
+        padding: 0 3rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .train {
+        width: calc(50% - 2rem);
+        min-width: 280px;
+    }
+    .train h3 {
+        font-size: 2.8rem;
+    }
+    .train p {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile Devices (under 768px) */
+@media screen and (max-width: 767px) {
     html {
         font-size: 10px;
     }
     header {
         padding: 1rem;
         flex-direction: column;
-        align-items: center;
+        gap: 1rem;
     }
-
+    .title {
+        padding-left: 0;
+    }
     .title h1 {
-        font-size: 3rem; 
+        font-size: 2.8rem;
     }
-
     .logo img {
-        width: 7rem; 
+        width: 7rem;
     }
-
+    nav {
+        margin-right: 0;
+        width: 100%;
+    }
     nav ul {
-        gap: 1.5rem; 
-    }
-
-    nav ul li a {
-        font-size: 1.8rem; 
-    }
-    .train{
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: 1.5rem;
+        font-size: 1.8rem;
+        padding: 1rem 0;
+    }
+    .dropdown .content {
+        position: static;
+        width: 100%;
         text-align: center;
+    }
+    .main-container {
+        margin-top: 35rem;
+        padding: 0 1.5rem;
+        flex-direction: column;
+    }
+    .main-container img {
+        width: 100%;
+        margin: 0 0 2rem 0;
+        padding: 0;
+    }
+    .description {
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .description h1 {
+        font-size: 2.5rem;
+    }
+    .description p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+    .image-showcase {
+        flex-direction: column;
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+    .train {
+        width: 100%;
+        margin: 0;
+    }
+    .train:hover {
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .train h3 {
+        font-size: 2.5rem;
+    }
+    .train p {
+        font-size: 1.6rem;
+    }
+    nav ul li a:hover {
+        font-size: 2rem;
+    }
+    .dropdown:hover .title-dropdown {
+        font-size: 2rem;
+    }
+    footer {
+        padding: 1rem;
+        height: auto;
+    }
+    .see-more {
+        font-size: 3rem;
+    }
+    .see-more:hover {
+        font-size: 3.2rem;
     }
 }
-@media (min-width: 600px) and (max-width: 992px) {
-    .image-showcase {
-        flex-direction: column; /* Stack images vertically */
-        gap: 3rem; /* Adjust gap for vertical layout */
-    }
-    .main-container{
-        flex-direction: column;
-        margin-top: 38rem;
-        width: 85rem;
-        align-items: center;
-        text-align: center;
-    }
-    .main-container img{
-        width: 85rem;
-        padding-right: 15rem;
-        border-radius: 5px;
-   }
 
-    .train {
-        width: 80%; /* Smaller width for better alignment */
-        margin: 0 auto; /* Center the train cards */
-    }
+/* Small Mobile Devices (under 480px) */
 
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 9px;
+    }
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    .main-container {
+        margin-top: 22rem;
+    }
+    .description h1 {
+        font-size: 2.2rem;
+    }
+    .description p {
+        font-size: 1.5rem;
+    }
     .train h3 {
-        font-size: 3rem; /* Adjust font size */
+        font-size: 2.2rem;
     }
 
     .train p {
+        font-size: 1.4rem;
+    }
+
+    nav ul li a {
         font-size: 1.8rem;
     }
-    .image-showcase{
-        flex-direction: column;
-        padding-left: 1rem;
-    }
-    .train{
-        align-items: center;
-        max-width: 55%;
+    .dropdown .content a {
+        padding: 0.8rem;
     }
 }
 /* index page */
@@ -349,47 +451,65 @@ footer{
 /* train page title style */
 
 .trains-title {
-    margin-top: 8rem;
+    margin-top: 10rem;
     text-align: center;
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 700;
     color: #1a1a1a;
-    max-width: 2000px;
-    padding: 2rem 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 3rem 1rem;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef, #f8f9fa);
+    border-bottom: 3px solid #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* train cards grid style */
 
 .train-catalog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1400px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 3rem 4rem;
+    max-width: 1600px;
     margin: 0 auto;
+    background-color: #f8f9fa;
 }
 
 .train-card {
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1.5rem;
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 3rem;
 }
 
 .train-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 123, 255, 0.15);
 }
 
 .train-card h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #1a1a1a;
-    margin-bottom: 1rem;
-    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.train-card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+    border-radius: 2px;
 }
 
 .train-card p {
@@ -403,32 +523,37 @@ footer{
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
 }
 
 .train-card button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
 }
+
 
 /* media queries for different screen sizes */
 
-@media (max-width: 600px) {
+@media (min-width: 768px) and (max-width: 1024px) {
    .trains-title{
-    max-width: 35rem;
-    margin-top: 38rem;
+    margin-top: 10rem;
    }
   }   
-@media (min-width: 600px) and (max-width: 992px){
+@media (max-width: 767px){
     .trains-title{
-     max-width: 35rem;
-     margin-top: 17rem;
+     margin-top: 38rem;
     }
    }   
 
@@ -438,11 +563,16 @@ footer{
 
 .container{
    padding:2rem;
+   max-width: 1400px;
+   margin: 0 auto;
 }
 
 .slider-wrapper {
     position:relative;
     margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .slider {
@@ -463,42 +593,49 @@ footer{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
-
 .slider-nav{
     display:flex;
-    column-gap: 1rem;
+    column-gap: 1.2rem;
     position:absolute;
-    bottom: 1.25rem;
+    bottom: 2rem;
     left:50%;
     transform: translateX(-50%);
     z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    backdrop-filter: blur(4px);
 }
 
 .slider-nav a{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 50%;
     background-color: #fff;
-    opacity: 0.75;
+    opacity: 0.8;
     transition: opacity ease 250ms;
 }
 .slider-nav a:hover{
     opacity: 1;
+    transform: scale(1.2);
+    border-color: #007bff;
 }
 
 /* train text and container style */
 
 .train-detailed-description{
-    font-size: 2rem;
-    max-width: 150rem;
-    margin: auto;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    font-size: 1.8rem;
+    max-width: 120rem;
+    margin: 4rem auto;
+    padding: 0 4rem;
+    line-height: 1.7;
+    color: #444;
 }
 
 .description-wrapper{
-    background-color: rgb(235, 233, 233);
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     max-width: 160rem;
     margin: auto; 
@@ -507,14 +644,14 @@ footer{
 
 /* media queries for different screen sizes */
 
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 768) and (max-width: 1024) {
     .trains-title{
-        margin-top: 14rem;
+        margin-top: 38rem;
     }
 }
 @media (max-width:600px){
     .trains-title{
-        margin-top: 38rem;
+        margin-top: 29rem;
     }
     .description-wrapper{
         margin-left: 3rem;
