@@ -354,8 +354,8 @@ footer{
     font-size: 3.5rem;
     font-weight: bold;
     color: #1a1a1a;
-    padding: 2rem 1rem;
     max-width: 2000px;
+    padding: 2rem 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -526,4 +526,27 @@ footer{
 /* about page */
 
 /* about page styling */
+
+.main-about-section{
+    margin: auto;
+    margin-top: 10rem;
+    font-size: 2rem;
+    max-width: 80vw;
+    background-color: rgb(235, 233, 233);
+    padding: 5rem;
+}
+.about-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* media queries for different screen sizes */
+
+@media (max-width: 600px){
+    .main-about-section{
+        margin-top: 38rem;
+    }
+}
+
+/* contacts page */
 
