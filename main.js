@@ -1,3 +1,5 @@
+/* Removes the effect when you click on the slider button the page scrolls down to the anchor tag */
+
 document.querySelector('#js-script').addEventListener('click', (event) => {
     const $slide = document.querySelector(event.target.getAttribute('href'));
     if (!$slide) return;
