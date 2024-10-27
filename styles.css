@@ -75,10 +75,9 @@ nav ul li a {
 nav ul li a:hover {
     cursor: pointer;
     font-size: 2.2rem;
-    text-decoration: underline;
     transition: font-size 0.5s, text-decoration 0.5s;
     color: rgb(66, 66, 66); 
-
+    background-color: ;
 }
 
 /* dropdown menu style*/
@@ -524,8 +523,13 @@ footer{
     color: rgb(0, 0, 0);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
 }
-
+.train-text-wrapper{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+}
 .train-card button {
     background-color: #007bff;
     color: rgb(255, 255, 255);
@@ -550,21 +554,21 @@ footer{
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
 }
 #train-card1{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
                 url("assets/images/Shinkansen/pointgr_white_highsp.png");
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 #train-card2{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
     url("assets/images/TGV/tgv_train_mosaic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
    
 }
 #train-card3{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
                 url("assets/images/ICE/IM2021050576MO-original.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -572,27 +576,27 @@ footer{
    
 }
 #train-card4{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url("assets/images/CR400AF Fuxing/images.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("assets/images/CR400AF Fuxing/The_CRH_sisters_\(20160905094612\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
    
 }
 #train-card5{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
     url("assets/images/Eurostar/TGV_PBKA_N°4303.jpg");
     background-repeat: no-repeat;
     background-size: cover;
    
 }
 #train-card6{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255,0), rgba(255, 255, 255, 0)),
     url("assets/images/Accella Express/IMG_6349-scaled.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 #train-card7{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255,0 ), rgba(255, 255, 255,0 )),
     url("assets/images/Frecciarossa/FS_Trenitalia_ETR400_15_\(50832499597\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
