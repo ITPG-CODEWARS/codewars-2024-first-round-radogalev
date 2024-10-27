@@ -77,7 +77,6 @@ nav ul li a:hover {
     font-size: 2.2rem;
     transition: font-size 0.5s, text-decoration 0.5s;
     color: rgb(66, 66, 66); 
-    background-color: ;
 }
 
 /* dropdown menu style*/
@@ -86,6 +85,15 @@ nav ul li a:hover {
     display:block;
     color:black;
     padding: 10 15px;
+    transition: all 0.5s;
+}
+.dropdown .content a:hover{
+    background-color: #007bff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    color:white;
+    text-decoration: none;
+    transition: all 0.5s;
 }
 .dropdown .content{
     display:none;
@@ -93,13 +101,18 @@ nav ul li a:hover {
     position: absolute;
     min-width: 100px;
     box-shadow: 2px 2px 5px, rgba(0, 0, 0, 0.795);
+    padding: 2rem;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: white;
+    
 }
 .dropdown:hover .content{
-    display:block
+    display:block;
+
 }
 .dropdown:hover .title-dropdown {
     font-size: 2.2rem;
-    text-decoration: underline;
     color: rgb(66, 66, 66);
 }
 
@@ -206,7 +219,7 @@ nav ul li a:hover {
 }
 .train:hover {
     transform: translateY(-5px);
-    background-color: #0066cc; /* Slightly darker blue */
+    background-color: #0066cc; 
     padding: 2rem;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
@@ -472,7 +485,7 @@ footer{
 
 .train-catalog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2.5rem;
     padding: 3rem 4rem;
     max-width: 1600px;
@@ -505,6 +518,7 @@ footer{
     font-weight: 700;
     position: relative;
     padding-bottom: 1rem;
+
 }
 
 .train-card h2::after {
@@ -529,6 +543,7 @@ footer{
     background-color: white;
     padding: 2rem;
     border-radius: 16px;
+    width: fit-content;
 }
 .train-card button {
     background-color: #007bff;
@@ -546,6 +561,14 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+}
+.train-icon{
+    width: 5rem;
+}
+.icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .train-card button:hover {
@@ -621,7 +644,7 @@ footer{
 
 .container{
    padding:2rem;
-   max-width: 1400px;
+   max-width: 1600px;
    margin: 0 auto;
 }
 
