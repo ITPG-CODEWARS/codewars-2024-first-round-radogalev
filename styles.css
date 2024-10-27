@@ -3,7 +3,7 @@ html{
     font-size: 13px;
 }
 body {
-  font-family: "Barlow" , sans-serif;
+  font-family: "Roboto" , sans-serif;
   background-color: #f8f9fa;
 }
 
@@ -134,6 +134,9 @@ nav ul li a:hover {
     border-radius: 12px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
+.flagship-icon{
+    width: 5rem;
+}
 .description {
     margin-left: 4rem;
     margin-right: 0;
@@ -222,6 +225,7 @@ nav ul li a:hover {
     background-color: #0066cc; 
     padding: 2rem;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: white;
 }
 .train p{
    font-size: 2.2rem;
@@ -229,6 +233,112 @@ nav ul li a:hover {
 .train h3{
     font-size: 3.5rem;
     text-align: center;
+}
+.interactive-map-title{
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.interactive-map-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem;
+    position: relative;
+}
+.interactive-map{
+    position: relative;
+    width: 100%;
+}
+.interactive-map img{
+    padding: 1rem; 
+    width: 100%;
+    max-width: 1400px; 
+    height: auto; 
+    position: relative;
+    overflow-x: auto;
+    object-fit: contain; 
+    box-sizing: border-box; 
+    display: block;
+}
+.interactive-map-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.interactive-map-dot{
+    width:1rem;
+    height: 1rem;
+    background-color: #007bff;
+    border-radius: 50px;
+    position: absolute;
+}
+.interactive-map-dot:hover {
+    transform: scale(1.5);
+    background-color: #0056b3;
+}
+.interactive-map-dot::after {
+    content: attr(data-info);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    line-height: 1.4;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+#manufacturer-hitachi {
+    top: 34%;
+    left: 83%;
+}
+
+#manufacturer-alstom {
+    top: 28%;
+    left: 45%;
+}
+
+#manufacturer-siemens {
+    top: 26%;
+    left: 48%;
+}
+
+#manufacturer-crrc {
+    top: 38%;
+    left: 77%;
+}
+
+#manufacturer-bombardier {
+    top: 28%;
+    left: 25%;
+}
+
+#manufacturer-stadler {
+    top: 29%;
+    left: 48%;
+}
+
+#manufacturer-caf {
+    top: 32%;
+    left: 44%;
+}
+
+
+
+.interactive-map-dot:hover::after {
+    visibility: visible;
+    opacity: 1;
 }
 .find-more-btn{
     color:black;
@@ -750,8 +860,9 @@ footer{
     margin-top: 10rem;
     font-size: 2rem;
     max-width: 80vw;
-    background-color: rgb(235, 233, 233);
+    background-color: whitesmoke;
     padding: 5rem;
+    max-width: 100rem;
 }
 .about-title{
     font-weight: bold;
@@ -768,3 +879,6 @@ footer{
 
 /* contacts page */
 
+.contacts-container{
+    margin-top: 10rem;
+}
