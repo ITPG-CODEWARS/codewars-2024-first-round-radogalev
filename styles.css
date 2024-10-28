@@ -821,6 +821,43 @@ footer{
     border-color: #007bff;
 }
 
+/* style for key specs cards */
+
+.key-specs-cards{
+    display:flex;
+    background-color: #f8f9fa;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.max-speed-card, .engine-power-card{
+    width:44%;
+    background-color: white;
+    height: 30rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    color:black;
+    transition: all 0.3s ease;
+}
+.max-speed-card:hover, .engine-power-card:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    font-size: 6rem;
+    background-color: #0066cc;
+    color: #fff;
+}
+.key-card-text-num{
+    transition: font-size 0.3s ease;
+}
+.key-card-text-num:hover{
+    font-size: 5.5rem;
+    transition: font-size 0.3s ease;
+}
+.key-card-text{
+      font-size: 5rem;
+}
+
+
 /* train text and container style */
 
 .train-detailed-description{
@@ -830,10 +867,11 @@ footer{
     padding: 0 4rem;
     line-height: 1.7;
     color: #444;
+    gap:3rem;
 }
 
 .description-wrapper{
-    background-color: rgb(255, 255, 255);
+    background-color: #f8f9fa;
     border-radius: 25px;
     max-width: 160rem;
     margin: auto; 
@@ -842,10 +880,11 @@ footer{
 
 /* media queries for different screen sizes */
 
-@media (min-width: 768) and (max-width: 1024) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .trains-title{
         margin-top: 38rem;
     }
+
 }
 @media (max-width:600px){
     .trains-title{
@@ -856,6 +895,15 @@ footer{
         margin-right: 3rem;
 
     }
+    .key-specs-cards{
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+    }
+    .max-speed-card, .engine-power-card{
+        width: 80%;
+    }
+
 }
 
 /* about page */
