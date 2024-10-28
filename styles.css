@@ -115,7 +115,36 @@ nav ul li a:hover {
     font-size: 2.2rem;
     color: rgb(66, 66, 66);
 }
+.title-dropdown, [href="index.html"], [href="Trains.html"], [href="about.html"], [href="contacts.html"] {
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+}
 
+/* blue text underline effect */
+
+.title-dropdown::after, 
+[href="index.html"]::after, 
+[href="Trains.html"]::after, 
+[href="about.html"]::after, 
+[href="contacts.html"]::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #2563eb, #1e40af);
+    transition: width 0.3s ease;
+}
+
+.title-dropdown:hover::after,
+[href="index.html"]:hover::after,
+[href="Trains.html"]:hover::after,
+[href="about.html"]:hover::after,
+[href="contacts.html"]:hover::after {
+    width: 100%;
+}
 /* hero section style*/
 
 .main-container {
