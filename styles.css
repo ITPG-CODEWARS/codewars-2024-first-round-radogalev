@@ -938,6 +938,12 @@ footer{
     .max-speed-card, .engine-power-card{
         width: 80%;
     }
+    .key-card-text{
+        font-size: 4rem;;
+    }
+    .key-card-text-num:hover{
+        font-size: 4.5rem;
+    }
 
 }
 
