@@ -397,17 +397,26 @@ footer{
     color: black;
 }
 .see-more{
-    text-align: center;
-    font-size: 4rem;
-    color:black;
-    text-decoration: none;
-    transition: font-size 0.5s, text-decoration 0.5s;
+    margin:auto;
+    padding: 2rem;
+    border-radius: 66px;
+    border: none ;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+    margin-bottom: 3rem;
 }
 .see-more:hover{
+    color:white;
     cursor: pointer;
-    text-decoration: underline;
-    font-size: 4.5rem;
-    transition: font-size 0.5s, text-decoration 0.5s;
+    background-color: #0066cc;
+    padding: 2.2rem;
+    font-size: 4.2rem;
+    transition: background-color 0.5s ease, padding 0.5s ease, font-size 0.5s ease;
+}
+.see-more-text{
+    font-size: 4rem;
+    text-align: center;
 }
 
 /* media queries for different screen sizes */
